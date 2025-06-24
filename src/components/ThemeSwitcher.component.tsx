@@ -9,6 +9,7 @@ const ICON_SIZE = 20;
 export const ThemeSwitcher = () => {
   const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
 
