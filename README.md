@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+No global state manager or very robust architecture like MVVM or Clean Architecture was required because it is a small project and I didn't want to do reengineering.
+
+You can see the project in https://phrases-app-next-js.vercel.app/
+
 ## Getting Started
 
 First, run the development server:
