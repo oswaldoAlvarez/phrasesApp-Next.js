@@ -1,3 +1,4 @@
+import { generateUUID } from "@/utils";
 import { useState, useMemo } from "react";
 
 export interface Phrase {
@@ -11,10 +12,7 @@ export function usePhrases() {
 
   const addPhrase = (text: string) => {
     if (!text.trim()) return;
-    setPhrases((prev) => [
-      ...prev,
-      { id: crypto.randomUUID(), text: text.trim() },
-    ]);
+    setPhrases((prev) => [...prev, { id: generateUUID(), text: text.trim() }]);
   };
 
   const removePhrase = (id: string) => {
